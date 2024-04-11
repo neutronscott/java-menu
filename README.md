@@ -1,6 +1,12 @@
-mute@debian:~/java/menu$ find . -type f
-./make
-./src/META-INF/MANIFEST.MF
-./src/us/scottn/menu/Menu.java
-./src/us/scottn/menu/Main.java
+Example usage is already in Main.class. Create a menu with:
 
+```
+final Menu mainMenu = new Menu(
+  "Submenu",
+  new Menu.Item('A', "Simple function", Main::f),
+  new Menu.Item('Y', "Complex function", () -> g(scanner)),
+  new Menu.Item('Q', "Main Menu", null)
+);
+
+mainMenu.run(in, "prompt: ");
+```
