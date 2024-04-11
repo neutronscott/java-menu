@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-class Menu {
+public class Menu {
     /* from <https://yohanan.org/steve/projects/java-code-conventions>
      * static variables: public, protected, package level, private
      * instance variables: ditto
@@ -96,7 +96,7 @@ class Menu {
 //        this.f.run();
 //      }
 //    }
-    static class Item {
+    static public class Item {
       private char opt;
       private String name;
       private Runnable f;
